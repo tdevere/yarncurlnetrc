@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38F1D5C1E141A1C7561A5B8B /* Pods_YarnCurlNetrc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F17536A03CA5C7B7DD5603 /* Pods_YarnCurlNetrc.framework */; };
 		8A6938CD2936C48300831C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6938CC2936C48300831C33 /* AppDelegate.m */; };
 		8A6938D02936C48300831C33 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6938CF2936C48300831C33 /* SceneDelegate.m */; };
 		8A6938D32936C48300831C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6938D22936C48300831C33 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FC12EBDDD163AD770FA95EA /* Pods-YarnCurlNetrc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarnCurlNetrc.release.xcconfig"; path = "Target Support Files/Pods-YarnCurlNetrc/Pods-YarnCurlNetrc.release.xcconfig"; sourceTree = "<group>"; };
+		78F17536A03CA5C7B7DD5603 /* Pods_YarnCurlNetrc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YarnCurlNetrc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6938C82936C48300831C33 /* YarnCurlNetrc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YarnCurlNetrc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A6938CB2936C48300831C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A6938CC2936C48300831C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		8A6938DA2936C48500831C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A6938DC2936C48500831C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A6938DD2936C48500831C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A183A56D837C5A3A8EF7BCDF /* Pods-YarnCurlNetrc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YarnCurlNetrc.debug.xcconfig"; path = "Target Support Files/Pods-YarnCurlNetrc/Pods-YarnCurlNetrc.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F1D5C1E141A1C7561A5B8B /* Pods_YarnCurlNetrc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A62982AFC78BF67E7C6A55E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A183A56D837C5A3A8EF7BCDF /* Pods-YarnCurlNetrc.debug.xcconfig */,
+				2FC12EBDDD163AD770FA95EA /* Pods-YarnCurlNetrc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7152A538584CEDDD08859DA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78F17536A03CA5C7B7DD5603 /* Pods_YarnCurlNetrc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A6938BF2936C48300831C33 = {
 			isa = PBXGroup;
 			children = (
 				8A6938CA2936C48300831C33 /* YarnCurlNetrc */,
 				8A6938C92936C48300831C33 /* Products */,
+				0A62982AFC78BF67E7C6A55E /* Pods */,
+				7152A538584CEDDD08859DA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A6938E12936C48500831C33 /* Build configuration list for PBXNativeTarget "YarnCurlNetrc" */;
 			buildPhases = (
+				54204D43CE19E746CF04544F /* [CP] Check Pods Manifest.lock */,
 				8A6938C42936C48300831C33 /* Sources */,
 				8A6938C52936C48300831C33 /* Frameworks */,
 				8A6938C62936C48300831C33 /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54204D43CE19E746CF04544F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YarnCurlNetrc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A6938C42936C48300831C33 /* Sources */ = {
@@ -287,6 +338,7 @@
 		};
 		8A6938E22936C48500831C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A183A56D837C5A3A8EF7BCDF /* Pods-YarnCurlNetrc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +366,7 @@
 		};
 		8A6938E32936C48500831C33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC12EBDDD163AD770FA95EA /* Pods-YarnCurlNetrc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
